@@ -12,7 +12,7 @@
         <v-list-item>                 
             <v-list-item-content>                 
                 <v-list-item-title class="title">                     
-                    Modul 11                 
+                    UNGUIDED CUK                 
                     </v-list-item-title>                 
                     <v-list-item-subtitle>                     
                         Vue Consume REST API 
@@ -25,7 +25,7 @@
                 <v-list-item                 
                 v-for="item in items"                 
                 :key="item.title"                 
-                link                 
+                link :to="item.to"                 
                 >                 
                 <v-list-item-icon>                     
                     <v-icon>{{ item.icon }}</v-icon>                 
@@ -75,7 +75,8 @@
             return {         
                 drawer: null,         
                 items: [           
-                    { title: 'User Controller', icon: 'mdi-human-male' },         
+                    { title: 'User Controller', icon: 'mdi-human-male',to:" " },
+                    { title: 'Service Kendaraan', icon: 'mdi-car',to:"/apa" },         
                 ],       
             }     
         },   

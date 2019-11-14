@@ -15,9 +15,14 @@ const routes = [
         children: [         
             {           
                 name: 'UserController',           
-                path: '',           
+                path: ' ',           
                 component: loadView('userController')         
-            }       
+            },
+            {           
+                name: 'KendaraanController',           
+                path: '/apa',           
+                component: loadView('kendaraanController')         
+            }          
         ]     
     },   
 ]   
